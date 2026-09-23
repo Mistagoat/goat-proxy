@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Proxy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="logo">WEB<span>PROXY</span></div>
+    <p class="subtitle">Browse an HTTP/HTTPS page through your server.</p>
+
+    <form id="proxyForm">
+      <input id="url" type="url" placeholder="https://example.com" autocomplete="url" required>
+      <button type="submit">Go</button>
+    </form>
+
+    <p id="status" class="status"></p>
+
+    <section class="result">
+      <iframe id="viewer" title="Proxy result" sandbox="allow-forms allow-scripts"></iframe>
+    </section>
+
+    <p class="note">
+      Demo proxy: HTML only. Use it only for sites you are permitted to access.
+    </p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
